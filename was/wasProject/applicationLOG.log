@@ -1,0 +1,4 @@
+2015-12-18_18:08:18.905 [main] INFO  c.t.was.sample.webserver.HttpServer - Server could not start = {}
+java.io.IOException: C:\Users\skan\workspace\was\wasProject\src\main\webapp does not exist as a directory
+	at com.test.was.sample.webserver.HttpServer.<init>(HttpServer.java:26) ~[was.jar:na]
+	at com.test.was.sample.webserver.HttpServer.main(HttpServer.java:71) ~[was.jar:na]

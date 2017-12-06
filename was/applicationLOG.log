@@ -1,0 +1,783 @@
+2015-12-21_20:15:20.629 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_20:15:20.633 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_20:15:34.634 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_20:15:34.726 [pool-1-thread-2] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: kkk.index
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_20:15:34.745 [pool-1-thread-3] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:15:34.793 [pool-1-thread-5] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:16:30.353 [pool-1-thread-7] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: kkk.index
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_20:16:30.367 [pool-1-thread-8] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:16:30.433 [pool-1-thread-10] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:25:54.638 [pool-1-thread-12] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: kkk.index
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_20:25:54.650 [pool-1-thread-13] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:25:54.689 [pool-1-thread-15] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:27:12.553 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_20:27:12.559 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_20:27:25.643 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:27:25.649 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_20:27:25.815 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.html, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_20:27:25.817 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:27:25.817 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:27:25.817 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:27:25.852 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:27:25.852 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/favicon.ico, method=GET, Accept=*/*, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/index.html, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_20:27:25.853 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:27:25.853 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = favicon.ico
+2015-12-21_20:27:25.853 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:27:39.376 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:27:39.378 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.kkk, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_20:27:39.378 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:27:39.378 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.kkk
+2015-12-21_20:27:39.378 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:27:39.385 [pool-1-thread-3] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: index.kkk
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_20:28:17.936 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:17.940 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_20:28:17.942 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:28:17.942 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:28:17.942 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.167 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:56.168 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.exe, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:28:56.169 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:28:56.169 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.exe
+2015-12-21_20:28:56.169 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.199 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:56.200 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:28:56.200 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:28:56.201 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:28:56.201 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.218 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:56.219 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:28:56.219 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:28:56.219 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:28:56.219 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.220 [pool-1-thread-7] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:28:56.248 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:56.249 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:28:56.249 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:28:56.249 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.Hello
+2015-12-21_20:28:56.249 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.266 [pool-1-thread-9] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:28:56.266 [pool-1-thread-9] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:28:56.267 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:28:56.267 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:28:56.267 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:28:56.267 [pool-1-thread-9] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:29:40.419 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:29:40.422 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.exe, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:29:40.422 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:29:40.422 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.exe
+2015-12-21_20:29:40.422 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:29:40.452 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:29:40.453 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:29:40.454 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:29:40.454 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:29:40.454 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:29:40.475 [pool-1-thread-12] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:29:40.476 [pool-1-thread-12] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:29:40.478 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:29:40.478 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:29:40.478 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:29:40.480 [pool-1-thread-12] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:29:40.524 [pool-1-thread-13] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:29:40.525 [pool-1-thread-13] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:29:40.526 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:29:40.526 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.Hello
+2015-12-21_20:29:40.526 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:29:40.539 [pool-1-thread-14] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:29:40.540 [pool-1-thread-14] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:29:40.540 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:29:40.540 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:29:40.540 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:29:40.540 [pool-1-thread-14] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:30:16.309 [pool-1-thread-15] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:16.311 [pool-1-thread-15] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.exe, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:16.312 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:16.312 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.exe
+2015-12-21_20:30:16.312 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:16.340 [pool-1-thread-16] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:16.341 [pool-1-thread-16] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:16.341 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:30:16.341 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:30:16.341 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:16.357 [pool-1-thread-17] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:16.358 [pool-1-thread-17] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:16.359 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:16.359 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:30:16.359 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:16.359 [pool-1-thread-17] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:30:16.401 [pool-1-thread-18] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:16.402 [pool-1-thread-18] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:16.402 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:16.402 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.Hello
+2015-12-21_20:30:16.402 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:16.422 [pool-1-thread-19] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:16.423 [pool-1-thread-19] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:16.423 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:16.425 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:30:16.425 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:16.426 [pool-1-thread-19] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_20:30:26.967 [pool-1-thread-20] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:26.969 [pool-1-thread-20] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.exe, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:26.969 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:26.969 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.exe
+2015-12-21_20:30:26.969 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:26.999 [pool-1-thread-21] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:27.000 [pool-1-thread-21] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:27.001 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:30:27.001 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_20:30:27.001 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:27.016 [pool-1-thread-22] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:27.017 [pool-1-thread-22] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/kkk.500, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:27.018 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2015-12-21_20:30:27.018 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = kkk.500
+2015-12-21_20:30:27.018 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:27.020 [pool-1-thread-22] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: ext/kkk.500
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_20:30:27.034 [pool-1-thread-23] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:27.035 [pool-1-thread-23] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:27.036 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:27.036 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.Hello
+2015-12-21_20:30:27.036 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:27.065 [pool-1-thread-24] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_20:30:27.067 [pool-1-thread-24] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2015-12-21_20:30:27.068 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_20:30:27.068 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2015-12-21_20:30:27.068 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_20:30:27.068 [pool-1-thread-24] TRACE Hello - jsonStr = { "key" : "HelloWorld"}
+2015-12-21_21:25:51.229 [pool-1-thread-25] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:25:51.233 [pool-1-thread-25] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/TimeZone, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:25:51.233 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:25:51.234 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = TimeZone
+2015-12-21_21:25:51.234 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:25:51.236 [pool-1-thread-25] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: TimeZone
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:26:06.163 [pool-1-thread-26] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:26:06.167 [pool-1-thread-26] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/TimeNow, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:26:06.168 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:26:06.168 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = TimeNow
+2015-12-21_21:26:06.168 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:26:06.169 [pool-1-thread-26] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: TimeNow
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:69) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:26:14.405 [pool-1-thread-27] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:26:14.410 [pool-1-thread-27] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:26:14.411 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:26:14.411 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:26:14.411 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:26:14.412 [pool-1-thread-27] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:72) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+Caused by: java.lang.NoSuchMethodError: com.test.was.sample.http.Request.getParameter(Ljava/lang/String;)Ljava/lang/Object;
+	at service.TimeNow.doGet(TimeNow.java:23) ~[classes/:na]
+	... 11 common frames omitted
+2015-12-21_21:26:51.816 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:26:51.823 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:26:54.039 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:26:54.044 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:26:54.108 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:26:54.109 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:26:54.109 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:26:54.110 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:27:04.624 [pool-1-thread-1] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:30:38.602 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:30:38.606 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:30:40.678 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:30:40.682 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:30:40.731 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:30:40.733 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:30:40.733 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:30:40.733 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:30:40.738 [pool-1-thread-1] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:30:40.739 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시30분40초 
+2015-12-21_21:30:56.517 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:06.145 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:31:06.146 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:31:06.146 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:31:06.146 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:31:06.146 [pool-1-thread-2] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:31:06.146 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시31분06초 
+2015-12-21_21:31:07.544 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:07.548 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:31:07.548 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:31:07.548 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:31:07.549 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:31:07.549 [pool-1-thread-3] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:31:07.549 [pool-1-thread-3] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시31분07초 
+2015-12-21_21:31:10.680 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:29.729 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:29.733 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:31:29.733 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:31:29.733 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:31:29.733 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:31:29.734 [pool-1-thread-5] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:31:29.734 [pool-1-thread-5] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시31분29초 
+2015-12-21_21:31:33.272 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:41.243 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:31:41.248 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:31:44.749 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:44.752 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:31:44.794 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:31:44.796 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:31:44.796 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:31:44.796 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:31:44.800 [pool-1-thread-1] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:31:44.801 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시31분44초 
+2015-12-21_21:31:46.811 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:31:46.813 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:31:46.813 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:31:46.814 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:31:46.814 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:31:46.814 [pool-1-thread-2] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:31:46.814 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시31분46초 
+2015-12-21_21:31:48.698 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:32:17.193 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:32:17.196 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:32:17.196 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:32:17.196 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:32:17.196 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:32:17.197 [pool-1-thread-4] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:32:17.197 [pool-1-thread-4] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시32분17초 
+2015-12-21_21:32:30.296 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:32:30.301 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:32:30.302 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:32:30.303 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:32:30.303 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:32:30.305 [pool-1-thread-5] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:32:30.306 [pool-1-thread-5] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시32분30초 
+2015-12-21_21:39:07.709 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:39:07.714 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:39:07.714 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:39:07.714 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:39:07.714 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:39:07.715 [pool-1-thread-6] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:39:07.715 [pool-1-thread-6] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시39분07초 
+2015-12-21_21:39:14.658 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:39:14.662 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:39:14.663 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:39:14.663 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:39:14.663 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:39:14.663 [pool-1-thread-7] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:39:14.664 [pool-1-thread-7] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시39분14초 
+2015-12-21_21:39:17.800 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:39:17.803 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:39:17.804 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:39:17.804 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:39:17.804 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:39:17.804 [pool-1-thread-8] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:39:17.804 [pool-1-thread-8] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시39분17초 
+2015-12-21_21:39:30.180 [pool-1-thread-9] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:40:39.463 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:40:45.042 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:40:45.043 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:40:45.043 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:40:45.044 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:40:45.044 [pool-1-thread-10] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:40:45.045 [pool-1-thread-10] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시40분45초 
+2015-12-21_21:40:58.090 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:40:58.093 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:40:58.093 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:40:58.093 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:40:58.094 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:40:58.094 [pool-1-thread-11] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:40:58.094 [pool-1-thread-11] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시40분58초 
+2015-12-21_21:41:04.090 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:41:04.095 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:41:06.035 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:41:06.039 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:41:06.082 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:41:06.083 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:41:06.084 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:41:06.084 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:41:06.088 [pool-1-thread-1] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:41:06.089 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시41분06초 
+2015-12-21_21:41:06.089 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = <html><body>2015년 12월 21일 오후 09시41분06초<a href="service.TimeNow?city=Europe/London " ></a></body></html> 
+2015-12-21_21:41:18.767 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:41:18.770 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:41:18.770 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:41:18.770 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:41:18.771 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:41:18.771 [pool-1-thread-2] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:41:18.771 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시41분18초 
+2015-12-21_21:41:18.771 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = <html><body>2015년 12월 21일 오후 09시41분18초<a href="service.TimeNow?city=Europe/London " ></a></body></html> 
+2015-12-21_21:41:35.168 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:41:35.171 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:41:36.105 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:41:36.107 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:41:36.151 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:41:36.153 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:41:36.153 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:41:36.153 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:41:36.159 [pool-1-thread-1] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:41:36.160 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시41분36초 
+2015-12-21_21:41:38.108 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:41:38.110 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe/London, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:41:38.111 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /service.TimeNow?city=Europe/
+2015-12-21_21:41:38.111 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = London
+2015-12-21_21:41:38.111 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:41:38.120 [pool-1-thread-2] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: service.TimeNow?city=Europe/London
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:78) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:45:18.836 [main] INFO  c.t.was.sample.webserver.HttpServer - Server could not start = {}
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[na:1.8.0_65]
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387) ~[na:1.8.0_65]
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[na:1.8.0_65]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) ~[na:1.8.0_65]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[na:1.8.0_65]
+	at java.net.ServerSocket.<init>(ServerSocket.java:128) ~[na:1.8.0_65]
+	at com.test.was.sample.webserver.HttpServer.start(HttpServer.java:34) ~[classes/:na]
+	at com.test.was.sample.webserver.HttpServer.main(HttpServer.java:81) ~[classes/:na]
+2015-12-21_21:45:26.046 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:45:26.052 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:45:32.748 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:45:32.752 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:45:32.804 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe/London, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:45:32.805 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /service.TimeNow?city=Europe/
+2015-12-21_21:45:32.806 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = London
+2015-12-21_21:45:32.806 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:46:13.765 [pool-1-thread-1] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: service.TimeNow?city=Europe/London
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:78) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:46:16.273 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:46:16.275 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe/London, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:47:04.635 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /service.TimeNow?city=Europe/
+2015-12-21_21:47:04.916 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = London
+2015-12-21_21:47:05.259 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:47:08.908 [pool-1-thread-2] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: service.TimeNow?city=Europe/London
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:78) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:47:16.679 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:47:16.686 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:47:35.060 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:47:35.260 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:47:35.436 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:47:38.659 [pool-1-thread-3] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: service.TimeNow?city=Europe
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:78) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:50:09.937 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:50:09.940 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:50:16.378 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:50:16.385 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:50:16.427 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.html, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:50:16.429 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:50:16.429 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2015-12-21_21:50:16.429 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:50:20.480 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:50:20.490 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:50:20.490 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:50:20.490 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:50:20.490 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:50:20.495 [pool-1-thread-2] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: ervice.TimeNow
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:86) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:50:30.618 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:50:30.625 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:50:30.625 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:50:30.626 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:50:30.626 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:50:30.627 [pool-1-thread-3] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: ervice.TimeNow
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:86) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:50:46.193 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:50:46.198 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:50:59.180 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:50:59.185 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:50:59.239 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:51:08.823 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:51:09.055 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:51:09.271 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:51:50.224 [pool-1-thread-1] TRACE service.TimeNow - city = Europe 
+2015-12-21_21:51:52.420 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시51분51초 
+2015-12-21_21:54:33.148 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:54:33.152 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:54:36.560 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:54:36.563 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:54:36.563 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:54:39.296 [pool-1-thread-2] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:54:39.296 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시54분39초 
+2015-12-21_21:54:48.141 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:54:48.143 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe/London, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:54:48.143 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /service.TimeNow?city=Europe/
+2015-12-21_21:54:48.143 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = London
+2015-12-21_21:54:48.143 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:54:49.998 [pool-1-thread-3] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: London
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:86) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2015-12-21_21:54:57.765 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:54:57.768 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:54:57.770 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:54:57.770 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:54:57.770 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:55:00.439 [pool-1-thread-4] TRACE service.TimeNow - city = Europe 
+2015-12-21_21:55:00.440 [pool-1-thread-4] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분00초 
+2015-12-21_21:55:16.870 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:16.874 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:16.875 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:16.878 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:16.878 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:55:20.709 [pool-1-thread-5] TRACE service.TimeNow - city = Europe 
+2015-12-21_21:55:20.710 [pool-1-thread-5] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분20초 
+2015-12-21_21:55:45.824 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2015-12-21_21:55:45.828 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2015-12-21_21:55:48.677 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:48.682 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2015-12-21_21:55:48.735 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:48.738 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:48.738 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:48.738 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:55:48.742 [pool-1-thread-1] TRACE service.TimeNow - city = Europe 
+2015-12-21_21:55:48.743 [pool-1-thread-1] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분48초 
+2015-12-21_21:55:49.182 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:49.186 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Europe, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:49.186 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:49.186 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:49.186 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Europe
+2015-12-21_21:55:49.188 [pool-1-thread-2] TRACE service.TimeNow - city = Europe 
+2015-12-21_21:55:49.189 [pool-1-thread-2] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분49초 
+2015-12-21_21:55:53.571 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:53.579 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:53.581 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:53.582 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:53.583 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:55:53.583 [pool-1-thread-3] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:55:53.583 [pool-1-thread-3] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분53초 
+2015-12-21_21:55:56.487 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:56.491 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:56.493 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:56.493 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:56.493 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:55:56.493 [pool-1-thread-4] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:55:56.494 [pool-1-thread-4] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분56초 
+2015-12-21_21:55:57.982 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:57.988 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:57.989 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:57.989 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:57.989 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:55:57.989 [pool-1-thread-5] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:55:57.989 [pool-1-thread-5] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분57초 
+2015-12-21_21:55:59.043 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:59.048 [pool-1-thread-6] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:59.048 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:59.048 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:59.048 [pool-1-thread-6] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:55:59.049 [pool-1-thread-6] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:55:59.049 [pool-1-thread-6] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분59초 
+2015-12-21_21:55:59.984 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:55:59.987 [pool-1-thread-7] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:55:59.988 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:55:59.988 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:55:59.988 [pool-1-thread-7] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:55:59.988 [pool-1-thread-7] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:55:59.988 [pool-1-thread-7] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시55분59초 
+2015-12-21_21:56:00.839 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:56:00.842 [pool-1-thread-8] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분00초 
+2015-12-21_21:56:01.633 [pool-1-thread-9] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:01.636 [pool-1-thread-9] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:01.637 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:01.637 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:01.637 [pool-1-thread-9] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:56:01.639 [pool-1-thread-9] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:56:01.639 [pool-1-thread-9] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분01초 
+2015-12-21_21:56:03.024 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:03.029 [pool-1-thread-10] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow, method=GET, Cache-Control=max-age=0, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:03.030 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:03.030 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:03.030 [pool-1-thread-10] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2015-12-21_21:56:03.031 [pool-1-thread-10] TRACE service.TimeNow - city = Asia/Seoul 
+2015-12-21_21:56:03.031 [pool-1-thread-10] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분03초 
+2015-12-21_21:56:05.024 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:05.026 [pool-1-thread-11] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분05초 
+2015-12-21_21:56:06.672 [pool-1-thread-12] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:06.673 [pool-1-thread-12] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분06초 
+2015-12-21_21:56:07.228 [pool-1-thread-13] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:07.229 [pool-1-thread-13] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:07.229 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:07.230 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:07.230 [pool-1-thread-13] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:07.230 [pool-1-thread-13] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:07.230 [pool-1-thread-13] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분07초 
+2015-12-21_21:56:07.691 [pool-1-thread-14] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:07.692 [pool-1-thread-14] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:07.692 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:07.692 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:07.692 [pool-1-thread-14] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:07.692 [pool-1-thread-14] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:07.693 [pool-1-thread-14] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분07초 
+2015-12-21_21:56:08.227 [pool-1-thread-15] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:08.229 [pool-1-thread-15] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분08초 
+2015-12-21_21:56:08.848 [pool-1-thread-16] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:08.849 [pool-1-thread-16] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:08.850 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:08.850 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:08.850 [pool-1-thread-16] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:08.853 [pool-1-thread-16] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:08.853 [pool-1-thread-16] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분08초 
+2015-12-21_21:56:09.356 [pool-1-thread-17] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:09.357 [pool-1-thread-17] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:09.357 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:09.357 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:09.357 [pool-1-thread-17] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:09.357 [pool-1-thread-17] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:09.358 [pool-1-thread-17] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분09초 
+2015-12-21_21:56:09.514 [pool-1-thread-18] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:09.515 [pool-1-thread-18] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:09.516 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:09.516 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:09.516 [pool-1-thread-18] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:09.516 [pool-1-thread-18] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:09.517 [pool-1-thread-18] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분09초 
+2015-12-21_21:56:09.862 [pool-1-thread-19] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:09.864 [pool-1-thread-19] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:09.864 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:09.864 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:09.864 [pool-1-thread-19] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:09.864 [pool-1-thread-19] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:09.865 [pool-1-thread-19] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분09초 
+2015-12-21_21:56:10.060 [pool-1-thread-20] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.061 [pool-1-thread-20] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.062 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.062 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.062 [pool-1-thread-20] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.062 [pool-1-thread-20] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.062 [pool-1-thread-20] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:10.228 [pool-1-thread-21] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.229 [pool-1-thread-21] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.230 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.230 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.230 [pool-1-thread-21] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.230 [pool-1-thread-21] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.230 [pool-1-thread-21] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:10.411 [pool-1-thread-22] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.412 [pool-1-thread-22] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.413 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.413 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.413 [pool-1-thread-22] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.413 [pool-1-thread-22] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.414 [pool-1-thread-22] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:10.568 [pool-1-thread-23] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.577 [pool-1-thread-23] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.577 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.577 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.577 [pool-1-thread-23] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.577 [pool-1-thread-23] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.578 [pool-1-thread-23] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:10.754 [pool-1-thread-24] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.755 [pool-1-thread-24] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.755 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.755 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.755 [pool-1-thread-24] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.755 [pool-1-thread-24] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.756 [pool-1-thread-24] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:10.931 [pool-1-thread-25] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:10.932 [pool-1-thread-25] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:10.933 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:10.933 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:10.933 [pool-1-thread-25] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:10.933 [pool-1-thread-25] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:10.933 [pool-1-thread-25] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분10초 
+2015-12-21_21:56:11.106 [pool-1-thread-26] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:11.113 [pool-1-thread-26] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:11.114 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:11.114 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:11.114 [pool-1-thread-26] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:11.114 [pool-1-thread-26] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:11.114 [pool-1-thread-26] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분11초 
+2015-12-21_21:56:11.290 [pool-1-thread-27] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2015-12-21_21:56:11.290 [pool-1-thread-27] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.TimeNow?city=Japan, method=GET, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Upgrade-Insecure-Requests=1, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36, Referer=http://127.0.0.1/service.TimeNow?city=Japan, Host=127.0.0.1, Accept-Encoding=gzip, deflate, sdch, Accept-Language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, version=HTTP/1.1}
+2015-12-21_21:56:11.290 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2015-12-21_21:56:11.290 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.TimeNow
+2015-12-21_21:56:11.290 [pool-1-thread-27] TRACE c.t.w.sample.utils.HttpRequestUtils -  = city=Japan
+2015-12-21_21:56:11.291 [pool-1-thread-27] TRACE service.TimeNow - city = Japan 
+2015-12-21_21:56:11.292 [pool-1-thread-27] TRACE service.TimeNow - timeNowStr = 2015년 12월 21일 오후 09시56분11초 

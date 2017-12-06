@@ -1,0 +1,43 @@
+2016-07-11_22:40:49.957 [main] INFO  c.t.was.sample.webserver.HttpServer - Accepting connections on port = 80
+2016-07-11_22:40:49.970 [main] INFO  c.t.was.sample.webserver.HttpServer - Document Root = C:\Users\skan\workspace\was\src\main\webapp
+2016-07-11_22:41:01.749 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2016-07-11_22:41:01.757 [pool-1-thread-1] DEBUG c.t.w.s.utils.ContextErrorMessage - jsonStr = [  {    "rootDir": "root",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      }      ,      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "webapp",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  },  {    "rootDir": "wastest",    "detail": [      {        "name": "root_403",        "errorCode": "403",        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"      },      {        "name": "root_404",        "errorCode": "404",        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"      },      {        "name": "root_500",        "errorCode": "500",        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"      },      {        "name": "root_501",        "errorCode": "501",        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"      }    ]  }]
+2016-07-11_22:41:01.803 [pool-1-thread-1] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/index.exe, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2016-07-11_22:41:01.807 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2016-07-11_22:41:01.808 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.exe
+2016-07-11_22:41:01.808 [pool-1-thread-1] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2016-07-11_22:41:01.857 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2016-07-11_22:41:01.859 [pool-1-thread-2] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/index.html, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2016-07-11_22:41:01.860 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2016-07-11_22:41:01.860 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = index.html
+2016-07-11_22:41:01.860 [pool-1-thread-2] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2016-07-11_22:41:01.895 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2016-07-11_22:41:01.897 [pool-1-thread-3] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/ext/kkk.500, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2016-07-11_22:41:01.898 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /ext/
+2016-07-11_22:41:01.898 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = kkk.500
+2016-07-11_22:41:01.899 [pool-1-thread-3] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2016-07-11_22:41:01.911 [pool-1-thread-3] ERROR c.t.w.s.webserver.RequestProcessor - server error = {}
+java.lang.ClassNotFoundException: kkk.500
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_65]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_65]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_65]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_65]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_65]
+	at com.test.was.sample.http.Request.requestMappling(Request.java:86) ~[classes/:na]
+	at com.test.was.sample.webserver.RequestProcessor.run(RequestProcessor.java:95) ~[classes/:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+2016-07-11_22:41:01.939 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2016-07-11_22:41:01.943 [pool-1-thread-4] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/service.Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2016-07-11_22:41:01.944 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2016-07-11_22:41:01.944 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = service.Hello
+2016-07-11_22:41:01.944 [pool-1-thread-4] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 
+2016-07-11_22:41:01.995 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - root directory = webapp 
+2016-07-11_22:41:01.996 [pool-1-thread-5] TRACE c.t.w.s.webserver.RequestProcessor - header Info = {fileName=/Hello, method=GET, Accept=application/json, application/*+json, Connection=Keep-Alive, User-Agent=Apache-HttpClient/4.5.1 (Java/1.8.0_65), Host=127.0.0.1, Accept-Encoding=gzip,deflate, version=HTTP/1.1}
+2016-07-11_22:41:01.996 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = /
+2016-07-11_22:41:01.996 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = Hello
+2016-07-11_22:41:01.996 [pool-1-thread-5] TRACE c.t.w.sample.utils.HttpRequestUtils -  = 

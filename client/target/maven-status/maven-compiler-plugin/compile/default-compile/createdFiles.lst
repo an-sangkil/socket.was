@@ -1,0 +1,6 @@
+com\test\client\code\ClientCode.class
+com\test\client\model\HelloModel.class
+com\test\client\MessageConverter.class
+com\test\client\code\CommonCode.class
+com\test\client\HttpClientConnector$1.class
+com\test\client\HttpClientConnector.class

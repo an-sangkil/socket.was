@@ -1,0 +1,80 @@
+[
+  {
+    "rootDir": "root",
+    "detail": [
+      {
+        "name": "root_403",
+        "errorCode": "403",
+        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_404",
+        "errorCode": "404",
+         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_500",
+        "errorCode": "500",
+        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"
+      }
+      ,
+      {
+        "name": "root_501",
+        "errorCode": "501",
+        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"
+      }
+    ]
+  },
+  {
+    "rootDir": "webapp",
+    "detail": [
+      {
+        "name": "root_403",
+        "errorCode": "403",
+        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_404",
+        "errorCode": "404",
+         "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_500",
+        "errorCode": "500",
+        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_501",
+        "errorCode": "501",
+        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"
+      }
+    ]
+  },
+  {
+    "rootDir": "wastest",
+    "detail": [
+      {
+        "name": "root_403",
+        "errorCode": "403",
+        "message": "<HTML><HEAD><TITLE>Forbidden.</TITLE></HEAD><BODY><H1>HTTP Error 403: Forbidden.</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_404",
+        "errorCode": "404",
+        "message": "<HTML><HEAD><TITLE>File Not Found</TITLE></HEAD><BODY><H1>HTTP Error 404: File Not Found</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_500",
+        "errorCode": "500",
+        "message": "<HTML><HEAD><TITLE> Internal Server Error</TITLE></HEAD><BODY><H1>HTTP Error 500:  Internal Server Error</H1></BODY></HTML>"
+      },
+      {
+        "name": "root_501",
+        "errorCode": "501",
+        "message": "<HTML><HEAD><TITLE> Not Implemented</TITLE></HEAD><BODY><H1>HTTP Error 501:  Not Implemented</H1></BODY></HTML>"
+      }
+    ]
+  }
+]
+
+
